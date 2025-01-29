@@ -1,0 +1,127 @@
+/* Reset some basic styles */
+body, h2, p, form {
+    display: block;
+    margin: auto;
+    padding: 0;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+   /*
+    display: flex;
+    */
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+header .logo span{
+    color: #00d8b4;
+}
+
+form {
+    background-color: #ffffffbc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    width: 80%;
+
+}
+
+
+.fullform{
+    width: 100%;
+    display: flex;
+}
+
+
+.partform{
+    flex: 1;
+    flex-direction: column;
+    justify-content: center; /* Centers the button horizontally */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width:80%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #427a44;
+    background-color: #ffffff8f;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.6s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border: #007bff;
+}
+
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+select :hover {
+    border:1px solid #00ff15;
+}
+
+#snap{
+    background-color:#022625;
+    border:none;
+    color:#FFFFFF;
+    border-radius:3px;
+}
+
+
+#snap:hover{
+    background-color:#52a3a0;
+    color:#000000;
+}
+input[type="submit"] {
+    border: 1px solid #00AAFF;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 6px;
+    background-color: #00AAFF00;
+    border-radius: 15px;
+    color: #00AAFF;
+    font-size: 26px;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #00AAFF;
+    color: #fff;
+}
+
+p {
+    color: #d9534f;
+    text-align: center;
+}
+@media (max-width: 900px) {
+        
+    .fullform{
+        width: 100%;
+        display: block;
+    }
+
+
+}

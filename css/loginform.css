@@ -1,0 +1,91 @@
+body{
+background-image: url("ET-MiNT-UNDP-1.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+
+
+.receptionloginpage{
+   margin: auto;
+   text-align: center;
+   border: 6px solid rgb(15, 122, 141);
+   border-radius: 20px;
+   width: 30%;
+   height: fit-content;
+   font-family: sans-serif;
+}
+
+form{
+    background-color: rgb(154, 243, 255);
+}
+
+
+form div a{
+    color:#110286; 
+    margin:8px; 
+    border-radius:5px; 
+    text-decoration:none; 
+    font-size:20px;
+}
+
+form div a:hover{
+    background-color: rgb(194, 193, 193);
+}
+
+
+fieldset{
+    font-size: 22px;
+    
+}
+
+fieldset input{
+    border: 2px solid rgb(26, 255, 225);
+    height: 2rem;
+    width: 15rem;
+    border-radius: 6px;
+}
+fieldset button{
+    height: 2rem;
+    width: 15rem;
+    text-decoration: none;
+    padding: 5px 7px;
+    margin-right: 1px;
+    border: 1px solid #778;
+    color: white;
+    border:1px solid gray;
+    background: #3282c2;
+    border-radius: 8px; /*w3c border radius*/
+    box-shadow: 3px 3px 4px rgba(0,0,0,.5); /* w3c box shadow */
+    -moz-border-radius: 8px; /* mozilla border radius */
+    -moz-box-shadow: 3px 3px 4px rgba(0,0,0,.5); /* mozilla box shadow */
+    background: -moz-linear-gradient(center top, #a4ccec, #72a6d4 25%, #3282c2 45%, #357cbd 85%, #72a6d4); 
+        /* mozilla gradient background */
+    -webkit-border-radius: 8px; /* webkit border radius */
+    -webkit-box-shadow: 3px 3px 4px rgba(0,0,0,.5); /* webkit box shadow */
+    background: -webkit-gradient(linear, center top, center bottom, from(#a4ccec), 
+       color-stop(25%, #72a6d4),color-stop(45%, #3282c2), color-stop(85%, #357cbd), to(#72a6d4)); /* webkit
+        gradient background */
+}
+
+fieldset button:hover{
+    text-decoration: none;
+    padding: 5px 7px;
+    margin-right: 1px;
+    border: 1px solid #778;
+    color: rgb(13, 0, 255);
+    border:1px solid rgb(0, 255, 60);
+    background: #d2ff8f;
+    border-radius: 8px; /*w3c border radius*/
+    box-shadow: 3px 3px 4px rgba(0,0,0,.5); /* w3c box shadow */
+    -moz-border-radius: 8px; /* mozilla border radius */
+    -moz-box-shadow: 3px 3px 4px rgba(0,0,0,.5); /* mozilla box shadow */
+    background: -moz-linear-gradient(center top, rgba(246, 255, 250, 0.8), #9049bf 25%, #9fa8af 45%, #69f02a 85%, #aff653); 
+        /* mozilla gradient background */
+    -webkit-border-radius: 8px; /* webkit border radius */
+    -webkit-box-shadow: 3px 3px 4px rgba(0,0,0,.5); /* webkit box shadow */
+    background: -webkit-gradient(linear, center top, center bottom, from(#a4ccec), 
+       color-stop(25%, #cbe7ff),color-stop(45%, #f3faff), color-stop(85%, #adff41), to(#f0ee51)); /* webkit
+        gradient background */
+    
+}

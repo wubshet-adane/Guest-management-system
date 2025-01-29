@@ -1,0 +1,19 @@
+.back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back a {
+    text-decoration: none;
+    color: #3498db;
+    padding: 10px 20px;
+    border: 1px solid #3498db;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back a:hover {
+    background-color: #3498db;
+    color: #fff;
+}

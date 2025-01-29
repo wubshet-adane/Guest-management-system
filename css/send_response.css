@@ -1,0 +1,78 @@
+/* styles.css */
+
+/* Center the form */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background-color: #ebf6ff5d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+}
+
+textarea {
+    width: calc(100% - 10px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+.radio_btn{
+    justify-content:space-evenly;
+    margin: auto;
+    display: flex;
+}
+
+#accept{
+    font-size: 30px;
+    color: #00AAFF;
+}
+
+input[type="submit"] {
+            border: 2px solid #00AAFF;
+            margin-top: 1rem;
+            width: 100%;
+            padding: 6px;
+            background-color: #00AAFF00;
+            border-radius: 15px;
+            color: #00AAFF;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #00AAFF;
+            color: #fff;
+        }
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

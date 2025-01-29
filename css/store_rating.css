@@ -1,0 +1,96 @@
+
+
+/* Reset some basic elements */
+h2, form, label, input, textarea, select {
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/* Apply a background color and some padding to the body */
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family:'Courier New', Courier, monospace;
+    align-items: center;
+    height: 100vh;
+
+}
+
+
+header .logo span{
+    color: #00ffd5;
+}
+
+.fullform{
+    
+    margin: 0;
+}
+/* Style the form container */
+form {
+    background-color: #b7dbef3e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+}
+
+/* Style the form heading */
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #eeff00;
+    text-align: center;
+}
+
+/* Style the form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* Style the form inputs */
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #4affc9;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus{
+    border:none;
+} 
+
+input[type="text"]:hover,
+textarea:hover,
+select:hover{
+    border:1px solid rgba(255, 255, 255, 0.533);
+} 
+
+
+/* Style the submit button */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #41af5b00;
+    border: 1px solid #06aef7;
+    border-radius: 6px;
+    color: #06aef7;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Change button color on hover */
+input[type="submit"]:hover {
+    background-color: #06aef7;
+    color: #ffffff;
+}

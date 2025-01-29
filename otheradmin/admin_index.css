@@ -1,0 +1,143 @@
+body div center h3 b, .countall center h3 b, .all b{
+    color:#FFFFFF;
+    background-color:#12ff3d;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+
+.guest_log{
+    margin: auto;
+    padding: 20px;
+    align-content: space-around;
+    width: 80%;
+    display:grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto auto;
+}
+
+.guestlists{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 6px black;
+    text-align: center;
+}
+
+.guestlists div p{
+    color: rgb(0, 119, 119);
+}
+
+
+.guestlists div p b{
+    border-radius: 50%;
+    font-size: 2rem;
+    padding:0 4px;
+    background-color: rgb(0, 119, 119);
+    color: rgb(255, 255, 255);
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #015c57;
+    margin-top: 30px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+tr:hover{
+    border: 2px solid #4eae86;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+a, .guestlists div button{
+    border: none;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding:3px;
+    margin: 3px;
+    background-color: rgb(0, 119, 119);
+}
+.dlete {
+    background-color: red;
+    color: white;
+    
+  }
+
+  .dlete:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    
+  }
+  
+  a:hover, .guestlists div button:hover {
+    cursor: pointer;
+    background-color: rgb(88, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  
+  
+
+footer {
+    background-color: #74727244;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 25px;
+    width: 100%;
+    bottom: 0;
+}
+
+
+@media only screen and (max-width:900px){
+   
+    .guest_log{
+        margin: auto;
+        padding: 20px;
+        align-content:center;
+        width: 80%;
+        display:block;
+        grid-gap: 20px;
+        grid-template-columns: auto;
+    }
+
+    footer {
+        background-color: #b95a5a;
+        color: #fff;
+        text-align: center;
+        position:relative;
+        width: 100%;
+    } 
+}

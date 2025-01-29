@@ -1,0 +1,90 @@
+/* index.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b5b4b4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #636363;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+header .logo img {
+    height: 50px;
+    vertical-align: middle;
+}
+
+header .logo span {
+    display: contents;
+    font-size: 24px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li details {
+    cursor: pointer;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    text-align: center;
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+.new{
+    background-color: #a6a5a5;
+    box-shadow: 0 0 1px rgb(255, 255, 255);
+    border:none;
+    border-radius: 8px;
+    padding: 0%;
+}
+
+
+.sidebar ul{
+    list-style-type: none;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
