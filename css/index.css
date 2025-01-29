@@ -4,84 +4,47 @@ body {
    margin: 0 0 100px 0;
    padding: 0;
 }
-
-header{
-    background-color: #6c94a7;
-    color: #fff;
+header {
+    background-color: #ffffff;
+    color: #353131;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 10px;
     padding-right: 20px;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
-
-header div a{
+div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div a{
     color:blue;
     text-decoration:none; 
 }
-
-header .logo {
+.logo {
     font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
 }
-
-header .logo a img{
+.logo a img{
     width: 50px;
     border-radius: 5px;
 }
-
-.logo a{
-    margin-right: 30px;
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.logo span{
-    text-align:center;
-    color: #ffffff;
-}
-
-
-header nav ul {
+nav ul {
     list-style: none;
     display: flex;
     gap: 2px;
 }
 
-
-header nav ul li details summary:hover {
-    background:#86c4cf;
-
-}
-
-
-details[open]{
-   border:none;
-   border-radius:5px;
-   background-color:white;
-}
-
-
-details[open] a {
-    font-size: 12px;
-    display: block;
-    position:relative;
-    padding: 2px;
-    color: #333;
-    background-color:white;
-    text-decoration: none;
-}
-
-details[open] a:hover {
-    color: #00FF37;
-}
-
-summary,summary a #toggleResponsesBtn {
-    cursor: pointer;
-    padding: 6px 2px;
-    background: #20685c;
-    color: #ffffff;
-    border-radius: 4px;
-}
 
 
 

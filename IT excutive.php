@@ -134,25 +134,25 @@ if ($value->num_rows > 0) {
     </script>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="logo">
             <a href="index.php"><img src="includes/images/OIP.jpg" alt="logo"></a><span>Gate Management System of MINT Ethiopia</span>
         </div>
-        <nav>
+        <nav class="topnav">
             <ul>
                 <li>
-                    <details>
-                        <summary>Report</summary>
+                    Report
+                    <div class="dropdown">
                         <a href="send_report.php">Send Report</a>
                         <a href="sent_reports.php?roles=<?php echo urlencode($itsname); ?>">View Sent Report</a>
-                    </details>
+                    </div>
                 </li>
                 <li>
-                    <details>
-                        <summary>Settings</summary>
+                    Settings
+                    <div class="dropdown">
                         <a href="#" onclick="toggleSettings()">Appearance</a>
                         <a href="otheradmin/logout.php">Logout</a>
-                    </details>
+                    </div>
                 </li>
                 <li>
                     <div style="display:block;">

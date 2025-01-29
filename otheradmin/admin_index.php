@@ -34,6 +34,7 @@ $weekGuestCount = count($weekGuests);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Admin Dashboard</title>
@@ -42,9 +43,9 @@ $weekGuestCount = count($weekGuests);
     <link rel="stylesheet" href="../css/index.css">
     <script src="toggle_visibility_of_guestlogs.js" defer></script>
     <style>
-       
+
     </style>
-     <script>
+    <script>
         function toggleSettings() {
             const mainStylesheet = document.getElementById('mainStylesheet');
             const currentHref = mainStylesheet.getAttribute('href');
@@ -52,13 +53,18 @@ $weekGuestCount = count($weekGuests);
         }
     </script>
 </head>
+
 <body>
-<header>
-    <div class="logo"><a href="../index.php"><img src="../includes/images/OIP.jpg" alt="logo"></a><p style="margin:auto;">Gate Management System
-                of MINT Ethiopia</p></div>
+    <header>
+        <div class="logo">
+            <a href="../index.php">
+                <img src="../includes/images/OIP.jpg" alt="logo">
+            </a>
+            <p style="margin:auto;">Gate Management System of MINT Ethiopia</p>
+        </div>
         <nav class="topnav" id="myTopnav">
             <ul class="appbar_menu">
-               <li class="manage-guest">
+                <li class="manage-guest">
                     <details>
                         <summary>Manage Guest</summary>
                         <a href="../view_full_guest_logs.php">All Guests</a>
@@ -90,7 +96,8 @@ $weekGuestCount = count($weekGuests);
                 <li>
                     <div class="profile">
                         <a href="" style="margin:0; background-color:relative;">
-                            <img style="border-radius: 50%; display:block; margin:0;" src="../includes/images/OIP.jpg" alt="profile" with="60px" height="60px">
+                            <img style="border-radius: 50%; display:block; margin:0;" src="../includes/images/OIP.jpg"
+                                alt="profile" with="60px" height="60px">
                             <!--<span style="display:block; margin:0;">hello <?php echo $_SESSION['username']; ?></span>-->
                         </a>
                     </div>
@@ -100,45 +107,42 @@ $weekGuestCount = count($weekGuests);
     </header>
     <h1>Admin Dashboard</h1>
     <h2> Reports from system users!</h2>
-    <div class = "guestlists" style="width:fit-content;margin:auto;">
-        <div class="countall">     
+    <div class="guestlists" style="width:fit-content;margin:auto;">
+        <div class="countall">
             <h2>Recieved Reports</h2>
-            <?php 
-                if ($reportCount > 0){
-                    echo "<center><h3> There Are <b>" .$reportCount."</b> reports recieved from reception or officers!</h3></center>";
-                }
-                else{
-                    echo "<h3 style = 'color: #FF3C00;'>no reports found</h3>";
-                } 
+            <?php
+            if ($reportCount > 0) {
+                echo "<center><h3> There Are <b>" . $reportCount . "</b> reports recieved from reception or officers!</h3></center>";
+            } else {
+                echo "<h3 style = 'color: #FF3C00;'>no reports found</h3>";
+            }
             ?>
-        </div>  
+        </div>
     </div>
-    <?php 
-        if ($allGuestCount > 0){
-            echo "<center><h3 class='all'> There Are <b>" .$allGuestCount."</b> total guests Arrived to MINT until now!</h3></center>";
-        }
-        else{
-            echo "<center><h3 style = 'color: #FF3C00;'>no guests found</h3></center>";
-        } 
+    <?php
+    if ($allGuestCount > 0) {
+        echo "<center><h3 class='all'> There Are <b>" . $allGuestCount . "</b> total guests Arrived to MINT until now!</h3></center>";
+    } else {
+        echo "<center><h3 style = 'color: #FF3C00;'>no guests found</h3></center>";
+    }
     ?>
-    <div class = "guest_log">
+    <div class="guest_log">
         <div class="guestlists">
             <div>
                 <h2>Today's Guests:</h2>
             </div>
             <div>
-                <?php 
-                    if ($todayGuestCount > 0){
-                        echo "<p><b>".$todayGuestCount."</b> guests wellcame today!</p>";
-                    }
-                    else{
-                        echo "<p style = 'color: #FF3C00;'>no guests today</p>";
-                    } 
+                <?php
+                if ($todayGuestCount > 0) {
+                    echo "<p><b>" . $todayGuestCount . "</b> guests wellcame today!</p>";
+                } else {
+                    echo "<p style = 'color: #FF3C00;'>no guests today</p>";
+                }
                 ?>
                 <br>
                 <button id="toggleTodayguest">view today guest logs</button>
             </div>
-            <div class = "hidden">
+            <div class="hidden">
                 <?php if ($todayGuestCount > 0): ?>
                     <table border="1">
                         <tr>
@@ -174,18 +178,17 @@ $weekGuestCount = count($weekGuests);
                 <h2>Yesterday's Guests:</h2>
             </div>
             <div>
-                <?php 
-                    if ($yesterdayGuestCount > 0){
-                        echo "<p><b>".$yesterdayGuestCount."</b> guests wellcame yesterday!</p>";
-                    }
-                    else{
-                        echo "<p style = 'color: #FF3C00;'>no guests yesterday!</p>";
-                    } 
+                <?php
+                if ($yesterdayGuestCount > 0) {
+                    echo "<p><b>" . $yesterdayGuestCount . "</b> guests wellcame yesterday!</p>";
+                } else {
+                    echo "<p style = 'color: #FF3C00;'>no guests yesterday!</p>";
+                }
                 ?>
                 <br>
                 <button id="toggleYesterdayguest">view guest logs</button>
             </div>
-            <div class = "hidden">
+            <div class="hidden">
                 <?php if ($yesterdayGuestCount > 0): ?>
                     <table border="1">
                         <tr>
@@ -221,18 +224,17 @@ $weekGuestCount = count($weekGuests);
                 <h2>This Week's Guests:</h2>
             </div>
             <div>
-                <?php 
-                    if ($weekGuestCount > 0){
-                        echo "<p><b>".$weekGuestCount ."</b> guests wellcame in this week!</p>";
-                    }
-                    else{
-                        echo "<p style = 'color: #FF3C00;'>no guests for the past week!</p>";
-                    } 
+                <?php
+                if ($weekGuestCount > 0) {
+                    echo "<p><b>" . $weekGuestCount . "</b> guests wellcame in this week!</p>";
+                } else {
+                    echo "<p style = 'color: #FF3C00;'>no guests for the past week!</p>";
+                }
                 ?>
                 <br>
                 <button id="toggleWeeklyguest">view guest logs</button>
             </div>
-            <div class = "hidden">
+            <div class="hidden">
                 <?php if ($weekGuestCount > 0): ?>
                     <table border="1">
                         <tr>
@@ -264,8 +266,8 @@ $weekGuestCount = count($weekGuests);
             </div>
         </div>
     </div>
-<div class="guestdisply">
-</div>
+    <div class="guestdisply">
+    </div>
 
 
 
@@ -297,4 +299,5 @@ $weekGuestCount = count($weekGuests);
 
     <?php include "../includes/footer.php"; ?>
 </body>
+
 </html>
